@@ -1,0 +1,59 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+:root {
+	--color-dark: #fff;
+	--color-light: #fff;
+	--color-accent: #5d71dd;
+}
+
+a {
+	font-family: 'Cormorant';
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	background-color: none;
+	margin: 0;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	padding: 0px 0;
+	font-family: 'Cormorant', normal;
+	font-weight: 400;
+}
+
+.wrapper {
+	position:relative;
+	grid-row: 1/3;
+	background-color: #141414;
+}
+
+ul {
+	list-style-type: none;
+}
