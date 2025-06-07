@@ -1,4 +1,71 @@
-const main_video = document.querySelector('.main-video video');
+document.addEventListener('DOMContentLoaded', function() {
+  // Mobile menu toggle
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+  
+  mobileMenuBtn.addEventListener('click', function() {
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+  });
+  
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      navLinks.style.display = 'flex';
+    } else {
+      navLinks.style.display = 'none';
+    }
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  // Image hover effects
+  const contentImages = document.querySelectorAll('.content-image');
+  contentImages.forEach(img => {
+    img.addEventListener('mouseenter', function() {
+      this.style.transform = 'scale(1.05)';
+    });
+    
+    img.addEventListener('mouseleave', function() {
+      this.style.transform = 'scale(1)';
+    });
+  });
+  
+  // Button hover effects
+  const buttons = document.querySelectorAll('.hero-button, .content-button');
+  buttons.forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+      this.style.boxShadow = '0 5px 15px rgba(231, 76, 60, 0.4)';
+    });
+    
+    btn.addEventListener('mouseleave', function() {
+      this.style.boxShadow = 'none';
+    });
+  });
+  
+  // Video playlist functionality (from your original script)
+  const main_video = document.querySelector('.main-video video');
+  const main_video_title = document.querySelector('.main-video .title');
+  const video_playlist = document.querySelector('.video-playlist .videos');
+  
+  // ... (rest of your original video playlist code)
+  // This part remains unchanged from your original script.js
+});const main_video = document.querySelector('.main-video video');
 const main_video_title = document.querySelector('.main-video .title');
 const video_playlist = document.querySelector('.video-playlist .videos');
 
