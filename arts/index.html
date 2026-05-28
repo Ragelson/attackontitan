@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="../css/shared.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
 </head>
 <body>
 
@@ -36,67 +36,61 @@
     <a href="../arts/index.html">Галерея</a>
   </div>
 
-  <!-- Gallery Hero -->
-  <section class="gallery-hero">
-    <div class="gallery-hero__overlay"></div>
-    <div class="gallery-hero__content">
-      <span class="gallery-hero__eyebrow">Shingeki no Kyojin</span>
-      <h1 class="gallery-hero__title">Галерея</h1>
-      <p class="gallery-hero__sub">Мрачная, но завораживающая история, которая затрагивает самые глубинные струны души.</p>
-    </div>
-  </section>
+  <div class="gallery-page">
 
-  <!-- Slider -->
-  <section class="gallery-section">
-    <div class="swiper gallery-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/1.jpg"  alt="Арт 1" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/2.jpg"  alt="Арт 2" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/3.jpg"  alt="Арт 3" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/4.jpg"  alt="Арт 4" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/5.jpg"  alt="Арт 5" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/6.jpg"  alt="Арт 6" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/7.jpg"  alt="Арт 7" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/8.jpg"  alt="Арт 8" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/9.jpg"  alt="Арт 9" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/10.jpg" alt="Арт 10" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/11.jpg" alt="Арт 11" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/12.jpg" alt="Арт 12" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/13.jpg" alt="Арт 13" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/14.jpg" alt="Арт 14" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/15.jpg" alt="Арт 15" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/16.jpg" alt="Арт 16" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/17.jpg" alt="Арт 17" class="gallery-img"></div>
-        <div class="swiper-slide"><img src="images/18.jpg" alt="Арт 18" class="gallery-img"></div>
-      </div>
-      <div class="swiper-button-prev gallery-prev"></div>
-      <div class="swiper-button-next gallery-next"></div>
-      <div class="swiper-pagination gallery-pagination"></div>
-    </div>
-  </section>
+    <!-- Intro -->
+    <section class="gallery-intro">
+      <div class="gallery-intro__eyebrow">Арты и иллюстрации</div>
+      <h1 class="gallery-intro__title">Галерея</h1>
+      <p class="gallery-intro__sub">
+        Мрачная, но завораживающая история — от величественных стен до разрушительного грохота земли.
+      </p>
+    </section>
 
-  <!-- Grid -->
-  <section class="grid-section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Все иллюстрации</h2>
-        <div class="section-title__line"></div>
+    <!-- Rotated cinematic slider 
+    <section class="gallery-stage">
+      <div class="swiper gallery-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/1.jpg"  alt="Арт 1"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/2.jpg"  alt="Арт 2"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/3.jpg"  alt="Арт 3"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/4.jpg"  alt="Арт 4"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/5.jpg"  alt="Арт 5"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/6.jpg"  alt="Арт 6"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/7.jpg"  alt="Арт 7"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/8.jpg"  alt="Арт 8"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/9.jpg"  alt="Арт 9"  class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/10.jpg" alt="Арт 10" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/11.jpg" alt="Арт 11" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/12.jpg" alt="Арт 12" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/13.jpg" alt="Арт 13" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/14.jpg" alt="Арт 14" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/15.jpg" alt="Арт 15" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/16.jpg" alt="Арт 16" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/17.jpg" alt="Арт 17" class="gallery-img"></div>
+          <div class="swiper-slide"><img src="images/18.jpg" alt="Арт 18" class="gallery-img"></div>
+        </div>
+        <div class="swiper-button-prev gallery-prev"></div>
+        <div class="swiper-button-next gallery-next"></div>
+        <div class="swiper-pagination gallery-pagination"></div>
       </div>
-      <div class="gallery-grid" id="galleryGrid"></div>
-    </div>
-  </section>
+    </section>
+-->
+    <!-- Image grid -->
+    <section class="grid-section">
+      <div class="container">
+
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+  </div>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">
-      <i class="fas fa-times"></i>
-    </button>
-    <button class="lightbox__nav lightbox__prev" id="lightboxPrev" aria-label="Предыдущее">
-      <i class="fas fa-chevron-left"></i>
-    </button>
-    <button class="lightbox__nav lightbox__next" id="lightboxNext" aria-label="Следующее">
-      <i class="fas fa-chevron-right"></i>
-    </button>
+    <button class="lightbox__close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox__nav lightbox__prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox__nav lightbox__next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
     <div class="lightbox__img-wrap">
       <img src="" alt="" id="lightboxImg">
     </div>

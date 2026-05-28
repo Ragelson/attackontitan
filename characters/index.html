@@ -35,185 +35,30 @@
     <a href="../arts/index.html">Галерея</a>
   </div>
 
-  <section class="chars-hero">
-    <div class="chars-hero__overlay"></div>
-    <div class="chars-hero__content">
-      <span class="chars-hero__eyebrow">Survey Corps</span>
-      <h1 class="chars-hero__title">Герои истории</h1>
+  <!-- SPOTLIGHT SLIDER -->
+  <div class="spotlight" id="spotlight">
+
+    <div class="slide" id="slide">
+      <!-- Items are built by JS -->
     </div>
-  </section>
 
-  <main class="chars-main">
-    <div class="container">
-
-      <div class="chars-carousel" id="carousel">
-        <div class="chars-track" id="track">
-
-          <article class="char-card" data-index="0">
-            <div class="char-card__img-wrap">
-              <img src="img/1.jpg" alt="Ханджи Зоэ" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Ханджи Зоэ</h2>
-              <p class="char-card__desc">Командир разведотряда, известный страстью к научным исследованиям титанов и готовностью рисковать ради получения новых знаний.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="1">
-            <div class="char-card__img-wrap">
-              <img src="img/2.jpg" alt="Эрен Йегер" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Эрен Йегер</h2>
-              <p class="char-card__desc">Юноша, обладающий способностью превращаться в титана, движимый жаждой уничтожения всех титанов и открытием правды об их происхождении.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="2">
-            <div class="char-card__img-wrap">
-              <img src="img/3.jpg" alt="Микаса Аккерман" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Микаса Аккерман</h2>
-              <p class="char-card__desc">Приёмная сестра Эрена, обладающая выдающимися боевыми навыками и безграничной преданностью к нему.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="3">
-            <div class="char-card__img-wrap">
-              <img src="img/4.jpg" alt="Армин Арлерт" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Армин Арлерт</h2>
-              <p class="char-card__desc">Лучший друг Эрена и Микасы, обладающий высоким интеллектом и стратегическим мышлением, играющий ключевую роль в принятии решений.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="4">
-            <div class="char-card__img-wrap">
-              <img src="img/5.jpg" alt="Жан Кирштейн" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Жан Кирштейн</h2>
-              <p class="char-card__desc">Сокурсник Эрена, изначально недолюбливающий его, но позднее становящийся одним из доверенных членов разведотряда.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="5">
-            <div class="char-card__img-wrap">
-              <img src="img/6.jpg" alt="Конни Спрингер" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Конни Спрингер</h2>
-              <p class="char-card__desc">Решительный и напористый солдат, чья храбрость и самоотверженность неоднократно помогают его товарищам.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="6">
-            <div class="char-card__img-wrap">
-              <img src="img/7.jpg" alt="Саша Браус" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Саша Браус</h2>
-              <p class="char-card__desc">Спонтанная и ненасытная девушка, обладающая выдающимися навыками стрельбы и поиска провианта.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="7">
-            <div class="char-card__img-wrap">
-              <img src="img/8.jpg" alt="Райнер Браун" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Райнер Браун</h2>
-              <p class="char-card__desc">Солдат, скрывающий свою истинную сущность титана-воина, которая постепенно открывается в ходе повествования.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="8">
-            <div class="char-card__img-wrap">
-              <img src="img/9.jpg" alt="Энни Леонхарт" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Энни Леонхарт</h2>
-              <p class="char-card__desc">Талантливый боец, оказывающаяся титаном-воином и ведущая сложную двойную игру.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="9">
-            <div class="char-card__img-wrap">
-              <img src="img/10.jpg" alt="Бертольд Хувер" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Бертольд Хувер</h2>
-              <p class="char-card__desc">Спокойный и рассудительный солдат, также являющийся титаном-воином наряду с Райнером и Энни.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="10">
-            <div class="char-card__img-wrap">
-              <img src="img/11.jpg" alt="Криста Ленц" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Криста Ленц</h2>
-              <p class="char-card__desc">Скромная девушка, чья истинная сущность — законная королева — постепенно раскрывается на протяжении истории.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="11">
-            <div class="char-card__img-wrap">
-              <img src="img/12.jpg" alt="Имир" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Имир</h2>
-              <p class="char-card__desc">Таинственная и своенравная девушка, обладающая способностью превращаться в титана и играющая ключевую роль в конфликте.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="12">
-            <div class="char-card__img-wrap">
-              <img src="img/13.jpg" alt="Леви" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Леви</h2>
-              <p class="char-card__desc">Капитан элитного подразделения разведотряда, известный выдающимися боевыми навыками и строгой дисциплиной.</p>
-            </div>
-          </article>
-
-          <article class="char-card" data-index="13">
-            <div class="char-card__img-wrap">
-              <img src="img/14.jpg" alt="Эрвин Смит" class="char-card__img">
-            </div>
-            <div class="char-card__body">
-              <h2 class="char-card__name">Эрвин Смит</h2>
-              <p class="char-card__desc">Командующий Разведывательного корпуса, выдающийся стратег, ведущий отряд к раскрытию тайн мира титанов.</p>
-            </div>
-          </article>
-
-        </div>
-
-        <div class="chars-nav">
-          <button class="chars-nav__btn" id="prevBtn" aria-label="Предыдущий">
-            <i class="fas fa-arrow-left"></i>
-          </button>
-          <div class="chars-dots" id="dots"></div>
-          <button class="chars-nav__btn" id="nextBtn" aria-label="Следующий">
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
+    <div class="spot-controls">
+      <button class="spot-btn prev" id="spotPrev" aria-label="Предыдущий">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <div class="spot-counter" id="spotCounter">01 / 14</div>
+      <button class="spot-btn next" id="spotNext" aria-label="Следующий">
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
-  </main>
+
+  </div>
 
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__logo">
         <img src="../img/logo.png" alt="Attack on Titan">
       </div>
-      <nav class="footer__links">
-        <a href="#">О проекте</a>
-        <a href="#">Контакты</a>
-      </nav>
     </div>
     <p class="footer__copy">Основано на манге ©Shingeki no Kyojin Хадзимэ Исаямы.</p>
   </footer>

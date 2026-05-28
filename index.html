@@ -35,26 +35,68 @@
     <a href="arts/index.html">Галерея</a>
   </div>
 
+  <!-- HERO -->
   <section class="hero">
+    <div class="hero__noise"></div>
     <div class="hero__overlay"></div>
+
     <div class="hero__content">
-      <span class="hero__eyebrow">Shingeki no Kyojin</span>
-      <h1 class="hero__title">Атака<br>Титанов</h1>
+      <div class="hero__year-badge">2013 — 2023</div>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Атака</span>
+        <span class="hero__title-line hero__title-line--accent">Титанов</span>
+      </h1>
+      <p class="hero__jp">進撃の巨人</p>
       <p class="hero__sub">Судьба человечества в ваших руках</p>
       <a href="serial/index.html" class="btn btn--primary hero__cta">
         <i class="fas fa-play"></i> Смотреть сериал
       </a>
     </div>
-    <div class="hero__scroll-hint"></div>
+
+    <!-- Ticker belt at bottom of hero -->
+    <div class="ticker-belt" aria-hidden="true">
+      <div class="ticker-inner" id="tickerInner">
+        <span>4 сезона</span><span class="ticker-sep">◆</span>
+        <span>89 серий</span><span class="ticker-sep">◆</span>
+        <span>С 2013 года</span><span class="ticker-sep">◆</span>
+        <span>Хадзимэ Исаяма</span><span class="ticker-sep">◆</span>
+        <span>Shingeki no Kyojin</span><span class="ticker-sep">◆</span>
+        <span>Разведывательный корпус</span><span class="ticker-sep">◆</span>
+        <span>Сражайся или умри</span><span class="ticker-sep">◆</span>
+        <span>4 сезона</span><span class="ticker-sep">◆</span>
+        <span>89 серий</span><span class="ticker-sep">◆</span>
+        <span>С 2013 года</span><span class="ticker-sep">◆</span>
+        <span>Хадзимэ Исаяма</span><span class="ticker-sep">◆</span>
+        <span>Shingeki no Kyojin</span><span class="ticker-sep">◆</span>
+        <span>Разведывательный корпус</span><span class="ticker-sep">◆</span>
+        <span>Сражайся или умри</span><span class="ticker-sep">◆</span>
+      </div>
+    </div>
   </section>
 
+  <!-- QUOTE -->
+  <section class="quote-section">
+    <div class="quote-section__line-left"></div>
+    <blockquote class="quote">
+      <p class="quote__text">
+        «Если ты не будешь сражаться — ты не победишь.<br>
+        Но если будешь сражаться — сможешь жить.»
+      </p>
+      <cite class="quote__author">— Эрен Йегер</cite>
+    </blockquote>
+    <div class="quote-section__line-right"></div>
+  </section>
+
+  <!-- FEATURES -->
   <main>
     <div class="container">
       <div class="features">
 
         <article class="feature reveal">
+          <div class="feature__num" aria-hidden="true">01</div>
           <div class="feature__media">
             <img src="img/armin.jpg" alt="Персонажи" class="feature__img">
+            <div class="feature__media-label">Персонажи</div>
           </div>
           <div class="feature__body">
             <h2 class="feature__title">Знакомьтесь<br>с персонажами</h2>
@@ -66,8 +108,10 @@
         </article>
 
         <article class="feature feature--rev reveal">
+          <div class="feature__num" aria-hidden="true">02</div>
           <div class="feature__media">
             <img src="img/music.jpg" alt="Музыка" class="feature__img">
+            <div class="feature__media-label">Музыка</div>
           </div>
           <div class="feature__body">
             <h2 class="feature__title">Услышьте<br>этот мир</h2>
@@ -79,8 +123,10 @@
         </article>
 
         <article class="feature reveal">
+          <div class="feature__num" aria-hidden="true">03</div>
           <div class="feature__media">
             <img src="img/gallery.jpg" alt="Галерея" class="feature__img">
+            <div class="feature__media-label">Галерея</div>
           </div>
           <div class="feature__body">
             <h2 class="feature__title">Восхититесь<br>пейзажами</h2>
