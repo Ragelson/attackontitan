@@ -134,7 +134,7 @@ img { max-width: 100%; height: auto; display: block; }
 .footer {
   background: #000;
   border-top: 1px solid var(--border);
-  padding: 3rem 2rem 1.5rem;
+  padding: 0rem 2rem 1.5rem;
 }
 .footer__inner {
   max-width: 1200px;
